@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestCases">
+<test name ="Login">
+
+<classes>
+<class name="com.test.LoginFunctionExcel"/>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestCases" duration-ms="98950" started-at="2019-12-04T09:59:51Z" finished-at="2019-12-04T10:01:30Z">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="98950" started-at="2019-12-04T09:59:51Z" finished-at="2019-12-04T10:01:30Z">
+      <class name="com.test.LoginFunctionExcel">
+        <test-method status="PASS" signature="bfTIme()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="bfTIme" is-config="true" duration-ms="10325" started-at="2019-12-04T15:29:51Z" finished-at="2019-12-04T15:30:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfTIme -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="fbLogin" duration-ms="13683" started-at="2019-12-04T15:30:02Z" data-provider="loginData" finished-at="2019-12-04T15:30:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parthiraj93@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rajangetfit123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="afTime()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="afTime" is-config="true" duration-ms="1045" started-at="2019-12-04T15:30:15Z" finished-at="2019-12-04T15:30:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afTime -->
+        <test-method status="PASS" signature="bfTIme()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="bfTIme" is-config="true" duration-ms="8679" started-at="2019-12-04T15:30:16Z" finished-at="2019-12-04T15:30:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfTIme -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="fbLogin" duration-ms="14292" started-at="2019-12-04T15:30:25Z" data-provider="loginData" finished-at="2019-12-04T15:30:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parthi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rajangetfit123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="afTime()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="afTime" is-config="true" duration-ms="1158" started-at="2019-12-04T15:30:39Z" finished-at="2019-12-04T15:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afTime -->
+        <test-method status="PASS" signature="bfTIme()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="bfTIme" is-config="true" duration-ms="9175" started-at="2019-12-04T15:30:40Z" finished-at="2019-12-04T15:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfTIme -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="fbLogin" duration-ms="13646" started-at="2019-12-04T15:30:50Z" data-provider="loginData" finished-at="2019-12-04T15:31:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parthiraj93@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12344]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="afTime()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="afTime" is-config="true" duration-ms="1081" started-at="2019-12-04T15:31:03Z" finished-at="2019-12-04T15:31:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afTime -->
+        <test-method status="PASS" signature="bfTIme()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="bfTIme" is-config="true" duration-ms="11211" started-at="2019-12-04T15:31:04Z" finished-at="2019-12-04T15:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfTIme -->
+        <test-method status="PASS" signature="fbLogin(java.lang.String, java.lang.String)[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="fbLogin" duration-ms="13490" started-at="2019-12-04T15:31:15Z" data-provider="loginData" finished-at="2019-12-04T15:31:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parthi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12344]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbLogin -->
+        <test-method status="PASS" signature="afTime()[pri:0, instance:com.test.LoginFunctionExcel@d2cc05a]" name="afTime" is-config="true" duration-ms="973" started-at="2019-12-04T15:31:29Z" finished-at="2019-12-04T15:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afTime -->
+      </class> <!-- com.test.LoginFunctionExcel -->
+    </test> <!-- Login -->
+  </suite> <!-- TestCases -->
+</testng-results>
