@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestCases">
-<test name ="Login">
-
+<suite name="TestCases" parallel ="tests" >
+<test name ="Login Chrome">
+<parameter name = "Browser" value = "chrome"/>
 <classes>
-<class name="com.test.LoginFunctionExcel"/>
+<class name="com.test.LoginFunctionDP"/>
+</classes>
+</test>
+<test name ="Login Internet">
+<parameter name = "Browser" value = "ie"/>
+<classes>
+<class name="com.test.LoginFunctionDP"/>
 </classes>
 </test>
 </suite>

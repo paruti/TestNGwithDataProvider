@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="com.test.LoginFunction">
+      <class name="com.test.SelectDropDown">
         <methods>
-          <include name="fbLogin"/>
-          <include name="bfTIme"/>
-          <include name="afTime"/>
+          <include name="dropDown"/>
         </methods>
-      </class> <!-- com.test.LoginFunction -->
+      </class> <!-- com.test.SelectDropDown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
