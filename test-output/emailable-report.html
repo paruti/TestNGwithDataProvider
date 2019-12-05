@@ -29,41 +29,100 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Login</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">99.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Login Chrome</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">37.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Login Internet</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">37.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">37.5 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Login &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">com.test.LoginFunctionExcel<td><a href="#m1"><b>fbLogin</b>  </a></td><td class="numi">4</td><td>1575453602016</td><td class="numi">87467</td></tr><tr class="passedodd"><td><a href="#m2"><b>fbLogin</b>  </a></td><td class="numi">4</td><td>1575453602016</td><td class="numi">87467</td></tr><tr class="passedodd"><td><a href="#m3"><b>fbLogin</b>  </a></td><td class="numi">4</td><td>1575453602016</td><td class="numi">87467</td></tr><tr class="passedodd"><td><a href="#m4"><b>fbLogin</b>  </a></td><td class="numi">4</td><td>1575453602016</td><td class="numi">87467</td></tr>
+<tr><th colspan="4">Login Chrome &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.test.LoginFunctionDP<td><a href="#m1"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1575475487180</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Login Chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.test.LoginFunctionDP<td><a href="#m2"><b>fbLogin</b>  </a></td><td class="numi">1</td><td>1575475460348</td><td class="numi">25715</td></tr>
+<tr><th colspan="4">Login Internet &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.test.LoginFunctionDP<td><a href="#m3"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1575475487180</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Login Internet &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.test.LoginFunctionDP<td><a href="#m4"><b>fbLogin</b>  </a></td><td class="numi">1</td><td>1575475456471</td><td class="numi">29667</td></tr>
 </table>
-<h1>Login</h1>
-<a id="m1"></a><h2>com.test.LoginFunctionExcel:fbLogin</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">parthi</td>
-<td style="padding-left:.5em;padding-right:2em">12344</td>
-</tr>
+<h1>Login Chrome</h1>
+<a id="m1"></a><h2>com.test.LoginFunctionDP:afterTest</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CATGFBKU&apos;, ip: &apos;192.168.29.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+<br/>at com.test.LoginFunctionDP.afterTest(LoginFunctionDP.java:89)
+<br/>19 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.test.LoginFunctionExcel:fbLogin</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">parthi</td>
-<td style="padding-left:.5em;padding-right:2em">rajangetfit123</td>
-</tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>com.test.LoginFunctionExcel:fbLogin</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">parthiraj93@gmail.com</td>
-<td style="padding-left:.5em;padding-right:2em">12344</td>
-</tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>com.test.LoginFunctionExcel:fbLogin</h2>
+<a id="m2"></a><h2>com.test.LoginFunctionDP:fbLogin</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
 <tr><td style="padding-left:.5em;padding-right:2em">parthiraj93@gmail.com</td>
 <td style="padding-left:.5em;padding-right:2em">rajangetfit123</td>
 </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Login Internet</h1>
+<a id="m3"></a><h2>com.test.LoginFunctionDP:afterTest</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CATGFBKU&apos;, ip: &apos;192.168.29.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+<br/>at com.test.LoginFunctionDP.afterTest(LoginFunctionDP.java:89)
+<br/>19 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.test.LoginFunctionDP:fbLogin</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">parthiraj93@gmail.com</td>
+<td style="padding-left:.5em;padding-right:2em">rajangetfit123</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CATGFBKU&apos;, ip: &apos;192.168.29.220&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\PARTHI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b732b0e18a19aab998932439015a36a9</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy13.click(Unknown Source)
+<br/>at com.functionalLibrary.BaseClass.clkBtn(BaseClass.java:20)
+<br/>at com.test.LoginFunctionDP.fbLogin(LoginFunctionDP.java:84)
+<br/>21 lines not shown
+</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
