@@ -25,16 +25,15 @@ public class FlntWait {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
 				.pollingEvery(Duration.ofSeconds(3)).ignoring(NoSuchElementException.class);
 
-		wait.until(new Function<WebDriver, WebElement>() {
+		WebElement search = wait.until(new Function<WebDriver, WebElement>() {
 
 			@Override
 			public WebElement apply(WebDriver driver) {
-
+			
 	return driver.findElement(By.xpath("//body/div/header/div/div/div[5]/div/div/div/div[7]"));
-
 			}
-		});
-		driver.findElement(By.xpath("//body/div/header/div/div/div[5]/div/div/div/div[7]")).click();
+			});
+		search.click();
 	}
 
 }

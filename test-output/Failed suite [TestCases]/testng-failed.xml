@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [TestCases]]" parallel="tests">
+  <parameter name="Browser" value="ie"/>
+  <test name="Login Internet(failed)(failed)" parallel="tests" preserve-order="true">
+    <parameter name="Browser" value="ie"/>
+    <classes>
+      <class name="com.test.LoginFunctionDP">
+        <methods>
+          <include name="afTime"/>
+          <include name="afterTest"/>
+          <include name="bfTIme"/>
+          <include name="fbLogin" invocation-numbers="0"/>
+          <include name="browser"/>
+        </methods>
+      </class> <!-- com.test.LoginFunctionDP -->
+    </classes>
+  </test> <!-- Login Internet(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [TestCases]] -->
