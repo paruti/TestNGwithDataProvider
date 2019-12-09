@@ -34,14 +34,10 @@ public class LoginFunctionDP extends BaseClass {
 	public static void browser(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\Parthi Rajan\\Parthi Rajan\\DataDrivenUsingTestNg\\src\\test\\resources\\resources\\Driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		 else if (browserName.equalsIgnoreCase("ie")) {
 
-			System.setProperty("webdriver.ie.driver",
-					"C:\\Users\\Parthi Rajan\\Parthi Rajan\\TestNG\\src\\test\\resources\\Driver\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		
@@ -51,28 +47,13 @@ public class LoginFunctionDP extends BaseClass {
 	@BeforeMethod
 	public void bfTIme() {
 		driver.get("https://www.facebook.com/");
+		driver.manage().deleteAllCookies();
 
-		Date d = new Date();
-		int month = d.getMonth();
-		int year = d.getYear();
-		int date = d.getDate();
-		int hours = d.getHours();
-		int minutes = d.getMinutes();
-		int seconds = d.getSeconds();
-		System.out.println("bfTime " + date + "_" + month + "_" + year + "_" + hours + "_" + minutes + "_" + seconds);
 	}
 
 	@AfterMethod
 	public void afTime() {
-		Date d = new Date();
-		int month = d.getMonth();
-		int year = d.getYear();
-		int date = d.getDate();
-		int hours = d.getHours();
-		int minutes = d.getMinutes();
-		int seconds = d.getSeconds();
-		System.out.println("afTime " + date + "_" + month + "_" + year + "_" + hours + "_" + minutes + "_" + seconds);
-		driver.quit();
+		driver.close();
 
 	}
 
@@ -87,7 +68,8 @@ public class LoginFunctionDP extends BaseClass {
 	
 	@AfterTest
 	public static void afterTest() {
-		driver.close();
-	}
+System.out.println("DataProvider");
+driver.quit();
+}
 
 }

@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestCases]" parallel="tests">
-  <parameter name="Browser" value="ie"/>
-  <test name="Login Internet(failed)" parallel="tests" preserve-order="true">
-    <parameter name="Browser" value="ie"/>
+<suite verbose="2" name="Failed suite [TestCases]">
+  <parameter name="Browser" value="chrome"/>
+  <test name="Login Chrome(failed)" preserve-order="true">
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.test.LoginFunctionDP">
+      <class name="com.test.LoginFunctionExcel">
         <methods>
-          <include name="afTime"/>
-          <include name="afTime"/>
-          <include name="afterTest"/>
-          <include name="afterTest"/>
           <include name="bfTIme"/>
-          <include name="bfTIme"/>
-          <include name="fbLogin" invocation-numbers="0"/>
-          <include name="browser"/>
+          <include name="afTime"/>
+          <include name="fbLogin"/>
           <include name="browser"/>
         </methods>
-      </class> <!-- com.test.LoginFunctionDP -->
+      </class> <!-- com.test.LoginFunctionExcel -->
     </classes>
-  </test> <!-- Login Internet(failed) -->
+  </test> <!-- Login Chrome(failed) -->
 </suite> <!-- Failed suite [TestCases] -->
