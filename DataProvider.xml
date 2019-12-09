@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestCases" verbose = "2" parallel ="classes"  thread-count="2" >
-<test name ="Login Chrome">
+<suite name="Login Test Cases" verbose = "2" >
+<!-- <test name ="Login Chrome using Excel">
+<classes>
+<class name="com.test.LoginFunctionExcel"></class>
+ </classes>
+ </test>
+ --> <test name ="Login Chrome using DataProvider">
 <parameter name = "Browser" value = "chrome"/>
 <classes>
 <class name="com.test.LoginFunctionDP"/>
-<class name="com.test.LoginFunctionExcel"></class>
-</classes>
+ </classes>
 </test>
 </suite>
