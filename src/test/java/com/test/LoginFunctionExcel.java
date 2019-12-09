@@ -6,13 +6,19 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.functionalLibrary.BaseClass;
 import com.objectRepository.FBHomePage;
+import com.objectRepository.FBHomePage1;
 
 import jxl.Sheet;
 import jxl.Workbook;
@@ -20,7 +26,12 @@ import jxl.read.biff.BiffException;
 
 public class LoginFunctionExcel extends BaseClass{
 	
+
 	String[][] data= null;
+
+
+	
+	
 	
 	@DataProvider(name="loginData")
 	public String[][] loginDataprovider() throws BiffException, IOException {
@@ -51,41 +62,26 @@ public class LoginFunctionExcel extends BaseClass{
 	
 	@BeforeMethod
 	public void bfTIme() {
+
 		launch("https://www.facebook.com/");
-		driver.manage().deleteAllCookies();
-	
-		Date d = new Date();
-		int month = d.getMonth();
-		int year = d.getYear();
-		int date = d.getDate();
-		int hours = d.getHours();
-		int minutes = d.getMinutes();
-		int seconds = d.getSeconds();
-		System.out.println("bfTime "+date+"_"+month+"_"+year+"_"+hours+"_"+minutes+"_"+seconds);
+	driver.manage().deleteAllCookies();
 	}
 	
 	@AfterMethod
 	public void afTime() {
-		Date d = new Date();
-		int month = d.getMonth();
-		int year = d.getYear();
-		int date = d.getDate();
-		int hours = d.getHours();
-		int minutes = d.getMinutes();
-		int seconds = d.getSeconds();
-		System.out.println("afTime "+date+"_"+month+"_"+year+"_"+hours+"_"+minutes+"_"+seconds);
-		driver.quit();
+		driver.close();
 
 	}
 	
 	@Test(dataProvider="loginData")
 	public static void fbLogin(String uname,String pswd) {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		FBHomePage fb = new FBHomePage();
-		enterText(fb.getUserName(), uname);
-		enterText(fb.getPassWord(), pswd);
-		clkBtn(fb.getLogIn());
+		FBHomePage1 fb1 = new FBHomePage1();
+		enterText(fb1.getUserName(), uname);
+		enterText(fb1.getPassWord(), pswd);
+		clkBtn(fb1.getLogIn());
 	}
+	
 	
 
 	

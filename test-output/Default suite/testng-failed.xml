@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="InterviewQuestions.RerunFailedTestCases">
+      <class name="com.test.LoginFunctionDP">
         <methods>
-          <include name="faileeTest1"/>
-          <include name="failedTest"/>
+          <include name="fbLogin"/>
         </methods>
-      </class> <!-- InterviewQuestions.RerunFailedTestCases -->
+      </class> <!-- com.test.LoginFunctionDP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
