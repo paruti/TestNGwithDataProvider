@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Failed Suite">
+<listeners>
+<listener class-name ="com.failedTestCase.Rerun.IAnnotationCase"/>
+</listeners>
+<test name= "Failed Test Cases">
+<classes>
+<class name = "com.failedTestCase.Rerun.RetryAnnTestCases"/>
+</classes>
+</test>
+</suite>
