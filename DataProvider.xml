@@ -4,6 +4,7 @@
 <parameter name = "Browser" value = "chrome"/>
 <classes>
 <class name="com.test.LoginFunctionDP"/>
+<class name="com.test.LoginFunctionExcel"></class>
 </classes>
 </test>
 <test name ="Login Internet">

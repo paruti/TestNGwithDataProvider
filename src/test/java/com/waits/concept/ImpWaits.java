@@ -22,7 +22,6 @@ public class ImpWaits {
 		driver.findElement(By.xpath("//span[text()='Hello. Sign in']")).click();
 		driver.findElement(By.name("email")).sendKeys("+919176121746");
 		driver.findElement(By.id("continue")).click();
-
 	}
 
 }

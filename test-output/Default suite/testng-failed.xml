@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="com.test.SelectDropDown">
+      <class name="InterviewQuestions.RerunFailedTestCases">
         <methods>
-          <include name="dropDown"/>
+          <include name="faileeTest1"/>
+          <include name="failedTest"/>
         </methods>
-      </class> <!-- com.test.SelectDropDown -->
+      </class> <!-- InterviewQuestions.RerunFailedTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
