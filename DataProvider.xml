@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestCases" parallel ="tests" >
+<suite name="TestCases" verbose = "2" parallel ="classes"  thread-count="2" >
 <test name ="Login Chrome">
 <parameter name = "Browser" value = "chrome"/>
 <classes>
 <class name="com.test.LoginFunctionDP"/>
 <class name="com.test.LoginFunctionExcel"></class>
-</classes>
-</test>
-<test name ="Login Internet">
-<parameter name = "Browser" value = "ie"/>
-<classes>
-<class name="com.test.LoginFunctionDP"/>
 </classes>
 </test>
 </suite>
